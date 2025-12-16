@@ -1,0 +1,17 @@
+video:
+  source: 0
+  width: 640
+  height: 480
+
+detection:
+  model_path: models/yolo/yolov8n.pt
+  confidence: 0.4
+  classes: [0]
+
+tracking:
+  max_age: 20
+  min_hits: 3
+  iou_threshold: 0.3
+
+counting:
+  line_position: 300
